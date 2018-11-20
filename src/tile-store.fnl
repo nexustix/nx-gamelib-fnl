@@ -3,7 +3,7 @@
 
 (defn tile-store []
   (local self {})
-    
+
   (set self.data {})
 
   (set self.minx 0)
@@ -13,7 +13,7 @@
   (set self.minz 0)
   (set self.maxz 0)
 
-  (def self.update-bounds [x y z]
+  (defn self.update-bounds [x y z]
     (when (> x self.maxx)
       (set self.maxx x))
     (when (< x self.minx)
